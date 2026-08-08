@@ -1,6 +1,10 @@
 spring:
   application:
     name: jpashop
+  # 콘솔 로그 색상 출력 (기본값 detect 는 Gradle 로 실행하면 감지에 실패해서 색이 안 나온다)
+  output:
+    ansi:
+      enabled: always
   datasource:
     url: jdbc:h2:tcp://localhost/~/jpashop
     username: sa
@@ -9,7 +13,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     properties:
       hibernate:
         # show_sql: true
