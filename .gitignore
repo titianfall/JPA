@@ -4,6 +4,9 @@
 /jpa-v20241003/
 /h2/
 
+# 정리 md와 같은 폴더에 둔 강의자료 PDF (활용 2편)
+study/docs/**/*.pdf
+
 # 처음부터 다시 만들어보는 연습용 백지 프로젝트
 /study/SpringBootJPA/jpashop2/
 

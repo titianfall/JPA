@@ -61,4 +61,14 @@ public class MemberService {
     public Member findOne(Long memberId) {
         return memberRepository.findOne(memberId);
     }
+
+    // 회원 이름 업데이트 Put(/api/v2/members/{id})
+    @Transactional
+    public void update(Long id, String name) {
+        Member member = memberRepository.findOne(id);
+        member.setName(name);
+        // 변경감지 사용 <> return member;
+        // member를 return 해도 좋지만 영속 상태가 끊기기 때문에 유의해야한다.
+        // id만 반환해서 다시 찾아서 쓸수있도록 하는것도 괜찮다.
+    }
 }

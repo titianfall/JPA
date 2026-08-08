@@ -5,6 +5,7 @@
 
 - **기본편**: 자바 ORM 표준 JPA 프로그래밍 — ✅ 완료
 - **활용 1편**: 실전! 스프링 부트와 JPA 활용 1편 — ✅ 완료
+- **활용 2편**: 실전! 스프링 부트와 JPA 활용 2편 (API 개발과 성능 최적화) — 🚀 진행 중
 
 ## 학습 정리 작업 트리거
 
@@ -17,17 +18,20 @@
 
 1. **위치 / 파일명** — 강의별로 구분한다.
 
-   | 강의 | 정리 md 위치 | PDF 강의자료 위치 (git 무시) | 실습 코드 |
-   |------|-------------|------------------------------|-----------|
-   | 기본편 | `study/docs/jpaBasic/` | `강의자료/JPA 기본편 - 강의자료/` | `study/jpaBasic/` (ex1-hello-jpa, hello-jpql, jpabook) |
-   | 활용 1편 | `study/docs/SpringBootJPA/` | `강의자료/Spring Boot 와 JPA 활용 - 1/` | `study/SpringBootJPA/jpashop` |
+   | 강의 | 정리 md 위치 | PDF 강의자료 위치 | 실습 코드 |
+   |------|-------------|------------------|-----------|
+   | 기본편 | `study/docs/jpaBasic/` | `강의자료/JPA 기본편 - 강의자료/` (git 무시) | `study/jpaBasic/` (ex1-hello-jpa, hello-jpql, jpabook) |
+   | 활용 1편 | `study/docs/SpringBootJPA/활용1/` | `강의자료/Spring Boot 와 JPA 활용 - 1/` (git 무시) | `study/SpringBootJPA/jpashop` |
+   | 활용 2편 | `study/docs/SpringBootJPA/활용2/` | `study/docs/SpringBootJPA/활용2/` (md와 같은 폴더, git 무시) | `study/SpringBootJPA/jpashop` (1편에서 이어서 개발) |
 
-   - 파일명은 PDF와 동일하게 `NN. 제목.md` (예: `01. 프로젝트 환경설정.md`).
+   - 파일명은 PDF와 동일하게 맞춘다. 활용 1편은 `NN. 제목.md`(`01. 프로젝트 환경설정.md`),
+     활용 2편 PDF는 한 자리 번호이므로 `N. 제목.md`(`1. API 개발 기본.md`).
 
 2. **정리 소스 (우선순위)**
    - ① **내가 직접 작성한 코드와 주석** — 가장 우선. 내 코드 스니펫과 주석을 실제로 인용해서 설명한다.
    - ② 해당 챕터 **PDF 강의자료** 내용.
    - 둘을 결합하되, **"꼭 알아야 하는 핵심"만** 추린다. 슬라이드 전체 복붙 금지.
+   - 아직 내 코드로 옮기지 않은 절은 강의자료 기준으로 쓰되 `🚧 미구현` 으로 표시한다.
 
 3. **작성 스타일 (앞 챕터와 통일)**
    - 맨 위 제목 `# NN. 제목 — 부제`, 그 아래 인용구로 근거(PDF/내 코드) 명시.
@@ -37,7 +41,8 @@
      (예: `javax.persistence` → `jakarta.persistence`, JUnit4 → JUnit5, 부트 2.x → 3.x).
    - 서술은 한국어.
    - 참고 템플릿: 기본편은 `study/docs/jpaBasic/02. JPA 시작.md`,
-     활용 1편은 `study/docs/SpringBootJPA/01. 프로젝트 환경설정.md`.
+     활용 1편은 `study/docs/SpringBootJPA/활용1/01. 프로젝트 환경설정.md`,
+     활용 2편은 `study/docs/SpringBootJPA/활용2/1. API 개발 기본.md`.
    - 스프링 기초 개념이 나오면 [spring-study/issues](https://github.com/titianfall/spring-study/tree/main/issues) 링크로 연결한다.
 
 4. **브랜치 / 커밋 / PR 워크플로우**
@@ -48,7 +53,18 @@
 
 ## 진행 계획 (챕터 목록)
 
-### 활용 1편 — 실전! 스프링 부트와 JPA 활용 1
+### 활용 2편 — 실전! 스프링 부트와 JPA 활용 2 (API 개발과 성능 최적화)
+
+| # | 제목 | 정리 상태 |
+|---|------|-----------|
+| 1 | API 개발 기본 | ✅ `1. API 개발 기본.md` |
+| 2 | API 개발 고급 - 준비 | ⬜ |
+| 3 | API 개발 고급 - 지연 로딩과 조회 성능 최적화 | ⬜ |
+| 4 | API 개발 고급 - 컬렉션 조회 최적화 | ⬜ |
+| 5 | API 개발 고급 - 실무 필수 최적화 | ⬜ |
+| 6 | 다음으로 | ⬜ |
+
+### 활용 1편 — 실전! 스프링 부트와 JPA 활용 1 (완료)
 
 | # | 제목 | 정리 상태 |
 |---|------|-----------|

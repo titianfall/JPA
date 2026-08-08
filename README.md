@@ -2,12 +2,25 @@
 
 - **1단계**: 자바 ORM 표준 JPA 프로그래밍 - 기본편 ✅ 완료
 - **2단계**: 실전! 스프링 부트와 JPA 활용 1편 ✅ 완료
+- **3단계**: 실전! 스프링 부트와 JPA 활용 2편 — API 개발과 성능 최적화 🚀 진행 중
 
 ## 학습 정리 진행 상황
 
+### 실전! 스프링 부트와 JPA 활용 2편 (진행 중)
+
+실습 코드: [`study/SpringBootJPA/jpashop`](study/SpringBootJPA/jpashop) (활용 1편에서 이어서 개발)
+
+| # | 챕터 | 정리 |
+|---|------|------|
+| 1 | API 개발 기본 | [1. API 개발 기본.md](study/docs/SpringBootJPA/활용2/1.%20API%20개발%20기본.md) |
+| 2 | API 개발 고급 - 준비 | — |
+| 3 | API 개발 고급 - 지연 로딩과 조회 성능 최적화 | — |
+| 4 | API 개발 고급 - 컬렉션 조회 최적화 | — |
+| 5 | API 개발 고급 - 실무 필수 최적화 | — |
+
 ### 실전! 스프링 부트와 JPA 활용 1편 (완료)
 
-📌 **[JPA 활용 1편 핵심 정리](study/docs/SpringBootJPA/JPA%20활용%201편%20핵심%20정리.md)** — 전 챕터 통합 요약
+📌 **[JPA 활용 1편 핵심 정리](study/docs/SpringBootJPA/활용1/JPA%20활용%201편%20핵심%20정리.md)** — 전 챕터 통합 요약
 실습 코드: [`study/SpringBootJPA/jpashop`](study/SpringBootJPA/jpashop)
 
 <details>
@@ -15,13 +28,13 @@
 
 | # | 챕터 | 정리 |
 |---|------|------|
-| 01 | 프로젝트 환경설정 | [01. 프로젝트 환경설정.md](study/docs/SpringBootJPA/01.%20프로젝트%20환경설정.md) |
-| 02 | 도메인 분석 설계 | [02. 도메인 분석 및 설계.md](study/docs/SpringBootJPA/02.%20도메인%20분석%20및%20설계.md) |
-| 03 | 애플리케이션 구현 준비 | [03. 애플리케이션 구현 준비.md](study/docs/SpringBootJPA/03.%20애플리케이션%20구현%20준비.md) |
-| 04 | 회원 도메인 개발 | [04. 회원 도메인 개발.md](study/docs/SpringBootJPA/04.%20회원%20도메인%20개발.md) |
-| 05 | 상품 도메인 개발 | [05. 상품 도메인 개발.md](study/docs/SpringBootJPA/05.%20상품%20도메인%20개발.md) |
-| 06 | 주문 도메인 개발 | [06. 주문 도메인 개발.md](study/docs/SpringBootJPA/06.%20주문%20도메인%20개발.md) |
-| 07 | 웹 계층 개발 | [07. 웹 계층 개발.md](study/docs/SpringBootJPA/07.%20웹%20계층%20개발.md) |
+| 01 | 프로젝트 환경설정 | [01. 프로젝트 환경설정.md](study/docs/SpringBootJPA/활용1/01.%20프로젝트%20환경설정.md) |
+| 02 | 도메인 분석 설계 | [02. 도메인 분석 및 설계.md](study/docs/SpringBootJPA/활용1/02.%20도메인%20분석%20및%20설계.md) |
+| 03 | 애플리케이션 구현 준비 | [03. 애플리케이션 구현 준비.md](study/docs/SpringBootJPA/활용1/03.%20애플리케이션%20구현%20준비.md) |
+| 04 | 회원 도메인 개발 | [04. 회원 도메인 개발.md](study/docs/SpringBootJPA/활용1/04.%20회원%20도메인%20개발.md) |
+| 05 | 상품 도메인 개발 | [05. 상품 도메인 개발.md](study/docs/SpringBootJPA/활용1/05.%20상품%20도메인%20개발.md) |
+| 06 | 주문 도메인 개발 | [06. 주문 도메인 개발.md](study/docs/SpringBootJPA/활용1/06.%20주문%20도메인%20개발.md) |
+| 07 | 웹 계층 개발 | [07. 웹 계층 개발.md](study/docs/SpringBootJPA/활용1/07.%20웹%20계층%20개발.md) |
 
 </details>
 
