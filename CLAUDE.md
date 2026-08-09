@@ -94,12 +94,15 @@
 
 ## 프로젝트 메모
 
-### 활용 1편 — `study/SpringBootJPA/jpashop`
-- Gradle(Groovy), Spring Boot 3.5.16, Java 17, H2
-- 의존성: web, thymeleaf, data-jpa, h2, lombok, validation, p6spy(쿼리 파라미터 로그)
+### 활용 1·2편 — `study/SpringBootJPA/jpashop` (2편은 1편 프로젝트를 이어서 개발)
+- Gradle(Groovy), Spring Boot 3.5.16, Java 17, Hibernate 6.6.x, H2
+- 의존성: web, thymeleaf, data-jpa, h2, lombok, validation, p6spy(쿼리 파라미터 로그),
+  jackson-datatype-hibernate6(활용 2편 3장에서 추가 — 미초기화 프록시를 `null`로 직렬화)
 - 설정 파일: `application.yml` (강의 기준. properties 아님)
 - 실행 전 H2 TCP 서버 필요: `h2/bin/h2.bat` (접속 URL `jdbc:h2:tcp://localhost/~/jpashop`)
 - 강의 영상은 부트 2.x — 정리 시 3.x 차이점(`jakarta.persistence`, JUnit5, `org.hibernate.orm.jdbc.bind: trace` 등)을 명시한다.
+- ⚠️ Jackson 하이버네이트 모듈은 강의(`Hibernate5Module`)와 다르다. 부트 3.5 + Hibernate 6이라 `Hibernate6Module`을 써야 한다.
+- ⚠️ `Order`의 주문 상태 필드명은 강의의 `status`가 아니라 `orderStatus` — DTO 작성 시 `getOrderStatus()`.
 
 ### 기본편 — `study/jpaBasic`
 - Maven, Java 17, Hibernate 6.x, H2. 순수 JPA (`persistence.xml`).

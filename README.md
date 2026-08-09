@@ -17,6 +17,7 @@
 | 3 | API 개발 고급 - 지연 로딩과 조회 성능 최적화 | [3. API 개발 고급 - 지연 로딩과 조회 성능 최적화.md](study/docs/SpringBootJPA/활용2/3.%20API%20개발%20고급%20-%20지연%20로딩과%20조회%20성능%20최적화.md) |
 | 4 | API 개발 고급 - 컬렉션 조회 최적화 | — |
 | 5 | API 개발 고급 - 실무 필수 최적화 | — |
+| 6 | 다음으로 | — |
 
 ### 실전! 스프링 부트와 JPA 활용 1편 (완료)
 
@@ -63,15 +64,18 @@
 
 ## 개발 환경
 
-### 활용 1편 — `study/SpringBootJPA/jpashop`
+### 활용 1·2편 — `study/SpringBootJPA/jpashop`
+
+활용 2편은 1편에서 만든 프로젝트를 그대로 이어서 개발한다.
 
 | 항목 | 버전 |
 |------|------|
 | Spring Boot | 3.5.16 |
 | Java | 17 |
+| Hibernate ORM | 6.6.53.Final (부트 BOM 관리) |
 | 빌드 | Gradle (Groovy) |
 | DB | H2 2.x (`jdbc:h2:tcp://localhost/~/jpashop`) |
-| 주요 의존성 | web, thymeleaf, data-jpa, h2, lombok, validation, p6spy |
+| 주요 의존성 | web, thymeleaf, data-jpa, h2, lombok, validation, p6spy, jackson-datatype-hibernate6 |
 
 ### 기본편 — `study/jpaBasic`
 
@@ -87,3 +91,4 @@
 
 - 스프링 기초가 필요할 때: [spring-study/issues](https://github.com/titianfall/spring-study/tree/main/issues) — 빈/DI, 웹 MVC, DB 접근 기술, AOP
 - Hibernate ↔ Spring Boot 버전 호환: Spring Boot BOM이 Hibernate 버전을 관리하므로, 부트 프로젝트에서는 버전 태그 없이 `spring-boot-starter-data-jpa`에 맡긴다.
+- Jackson 하이버네이트 모듈은 버전 계열이 갈린다 — 부트 2.x는 `Hibernate5Module`, 부트 3.x + Hibernate 5는 `Hibernate5JakartaModule`, **부트 3.5 + Hibernate 6은 `Hibernate6Module`**(`jackson-datatype-hibernate6`). 자세한 내용은 [3장 정리](study/docs/SpringBootJPA/활용2/3.%20API%20개발%20고급%20-%20지연%20로딩과%20조회%20성능%20최적화.md) 참고.
