@@ -108,7 +108,7 @@ public class OrderRepository {
     }
 
     // LAZY 로딩 무시 프록시 대신 실제 객체
-    public List<Order> findAllWithMemberDelivey() {
+    public List<Order> findAllWithMemberDelivery() {
         return em.createQuery("select o from Order o" +
                                 " join fetch o.member m" +
                                 " join fetch o.delivery d", Order.class)

@@ -41,7 +41,7 @@ public class OrderSimpleApiController {
         List<Order> all = orderRepository.findAllByString(new OrderSearch());
         for (Order order : all) {
             order.getMember().getName(); //Lazy 강제 초기화
-            order.getDelivery().getAddress(); //Lazy 강제 초기환
+            order.getDelivery().getAddress(); //Lazy 강제 초기화
         }
         return all; // member, delivery가 건드려져야함
     }
@@ -58,7 +58,7 @@ public class OrderSimpleApiController {
 
     @GetMapping("/api/v3/simple-orders")
     public List<SimpleOrderDto> orderV3() {
-        List<Order> orders = orderRepository.findAllWithMemberDelivey();
+        List<Order> orders = orderRepository.findAllWithMemberDelivery();
         List<SimpleOrderDto> result = orders.stream()
                 .map(order -> new SimpleOrderDto(order))
                 .collect(Collectors.toList());
