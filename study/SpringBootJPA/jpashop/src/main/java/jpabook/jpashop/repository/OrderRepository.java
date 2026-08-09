@@ -107,6 +107,14 @@ public class OrderRepository {
         return query.getResultList();
     }
 
+    // LAZY 로딩 무시 프록시 대신 실제 객체
+    public List<Order> findAllWithMemberDelivey() {
+        return em.createQuery("select o from Order o" +
+                                " join fetch o.member m" +
+                                " join fetch o.delivery d", Order.class)
+                .getResultList();
+    }
+
     /**
      * Querydsl 동적 쿼리 (가장 진화한 해결책 — 실무 권장)
      *
