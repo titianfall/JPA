@@ -32,6 +32,9 @@ bin/
 # VS Code
 .vscode/
 
+# Claude Code GUI 설정 (도구가 자동 생성)
+.claude-code-gui/
+
 # 로그 및 기타
 *.log
 .DS_Store

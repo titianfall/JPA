@@ -27,6 +27,11 @@ dependencies {
 
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.12.1'
 
+	// 초기화 안 된 지연 로딩 프록시를 null 로 직렬화
+	// 강의는 hibernate5(부트 2.x) 지만 이 프로젝트는 부트 3.5 + Hibernate 6 이라 hibernate6 를 쓴다.
+	// 버전은 스프링 부트 BOM 이 Jackson 버전에 맞춰 관리한다.
+	implementation 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate6'
+
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'

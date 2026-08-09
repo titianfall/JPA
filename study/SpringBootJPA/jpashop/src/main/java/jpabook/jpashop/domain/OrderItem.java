@@ -1,5 +1,6 @@
 package jpabook.jpashop.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jpabook.jpashop.domain.item.Item;
 import lombok.AccessLevel;
@@ -18,6 +19,7 @@ public class OrderItem {
     private int orderPrice; // 상품 개당 가격
     private int count; // 주문 수량 (재고 아님!!)
 
+    @JsonIgnore // 양방향 연관관계 — Order 로 되돌아가는 무한 루프 차단
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id")
     private Order order;
