@@ -146,7 +146,7 @@ public class OrderApiController {
         return collect;
     }
 
-    /** v3.1: 엔티티를 DTO로 변환 - 페이징과 한계 돌파 ⭐ 실무 권장
+    /** v3.1: 엔티티를 DTO로 변환 - 페이징과 한계 돌파 (실무 권장)
      * 컬렉션 fetch join시 paging 불가 > 최악의 경우 장애(out of memeory)
      *
      * !한계 돌파!
