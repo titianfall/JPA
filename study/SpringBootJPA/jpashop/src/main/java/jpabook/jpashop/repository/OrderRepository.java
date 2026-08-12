@@ -116,6 +116,41 @@ public class OrderRepository {
     }
 
     /**
+     * v3 - 컬렉션 페치 조인 (/api/v3/orders)
+     *
+     * distinct: 1:N 조인으로 뻥튀기된 row 중 같은 식별자의 Order를 애플리케이션에서 걸러준다.
+     * ⚠️ 하이버네이트 6부터는 엔티티 조회 시 중복 제거가 기본이라 distinct가 없어도 동작한다.
+     *    (강의는 부트 2.x / 하이버네이트 5 기준이라 distinct가 필수였다)
+     * ⚠️ 컬렉션 페치 조인은 페이징이 불가능하고, 둘 이상 사용할 수 없다.
+     */
+    public List<Order> findAllWithItem() {
+        return em.createQuery(
+                                "select distinct o from Order o" +
+                                        " join fetch o.member" +
+                                        " join fetch o.delivery" +
+                                        " join fetch o.orderItems oi" +
+                                        " join fetch oi.item", Order.class)
+//                .setFirstResult(1)
+//                .setMaxResults(100) // 페이징 쿼리 불가능
+                .getResultList();
+    }
+
+    /**
+     * v3.1 - ToOne만 페치 조인 + 페이징 (/api/v3.1/orders)
+     *
+     * ToOne(member, delivery)은 조인해도 row 수가 늘지 않으므로 페이징에 영향이 없다.
+     * 컬렉션(orderItems)은 지연 로딩으로 두고 default_batch_fetch_size / @BatchSize로 최적화한다.
+     */
+    public List<Order> findAllWithMemberDelivery(int offset, int limit) {
+        return em.createQuery("select o from Order o" +
+                        " join fetch o.member m" +
+                        " join fetch o.delivery d", Order.class
+                ).setFirstResult(offset)
+                 .setMaxResults(limit)
+                 .getResultList();
+    }
+
+    /**
      * Querydsl 동적 쿼리 (가장 진화한 해결책 — 실무 권장)
      *
      * JPA Criteria 는 표준이지만 복잡하고 유지보수가 어렵다. 동적 쿼리의 실질적 정답은 Querydsl 이다.

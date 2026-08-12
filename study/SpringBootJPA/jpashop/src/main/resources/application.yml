@@ -18,6 +18,7 @@ spring:
       hibernate:
         # show_sql: true
         format_sql: true
+        default_batch_fetch_size: 100 # 컬렉션의 요소들을 한번에 100개까지 가져옴
 
 logging.level:
   org.hibernate.SQL: debug
