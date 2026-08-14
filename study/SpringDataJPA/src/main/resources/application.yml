@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: data-jpa
+  # 콘솔 로그 색상 출력 (기본값 detect 는 Gradle 로 실행하면 감지에 실패해서 색이 안 나온다)
+  output:
+    ansi:
+      enabled: always
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/springDataJpa
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        # show_sql: true # System.out 에 찍히므로 아래 logging.level 방식을 쓴다
+        format_sql: true
+
+logging.level:
+  org.hibernate.SQL: debug
+  # 쿼리 파라미터 로그 (하이버네이트 6 이상. 강의의 org.hibernate.type: trace 는 동작하지 않는다)
+  # org.hibernate.orm.jdbc.bind: trace
