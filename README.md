@@ -3,8 +3,23 @@
 - **1단계**: 자바 ORM 표준 JPA 프로그래밍 - 기본편 ✅ 완료
 - **2단계**: 실전! 스프링 부트와 JPA 활용 1편 ✅ 완료
 - **3단계**: 실전! 스프링 부트와 JPA 활용 2편 — API 개발과 성능 최적화 🚀 진행 중
+- **4단계**: 실전! 스프링 데이터 JPA 🚀 진행 중
 
 ## 학습 정리 진행 상황
+
+### 실전! 스프링 데이터 JPA (진행 중)
+
+실습 코드: [`study/SpringDataJPA`](study/SpringDataJPA)
+
+| # | 챕터 | 정리 |
+|---|------|------|
+| 1 | 프로젝트 환경설정 | [1. 프로젝트 환경설정.md](study/SpringDataJPA/docs/1.%20프로젝트%20환경설정.md) |
+| 2 | 예제 도메인 모델 | — |
+| 3 | 공통 인터페이스 기능 | — |
+| 4 | 쿼리 메소드 기능 | — |
+| 5 | 확장 기능 | — |
+| 6 | 스프링 데이터 JPA 분석 | — |
+| 7 | 나머지 기능들 | — |
 
 ### 실전! 스프링 부트와 JPA 활용 2편 (진행 중)
 
@@ -63,6 +78,17 @@
 </details>
 
 ## 개발 환경
+
+### 스프링 데이터 JPA — `study/SpringDataJPA`
+
+| 항목 | 버전 |
+|------|------|
+| Spring Boot | 4.1.0 |
+| Java | 17 |
+| Hibernate ORM | 7.4.1.Final (부트 BOM 관리) |
+| 빌드 | Gradle (Groovy) |
+| DB | H2 2.x (`jdbc:h2:tcp://localhost/~/springDataJpa`) |
+| 주요 의존성 | webmvc, data-jpa, h2(+h2console), lombok, p6spy 2.0.1 |
 
 ### 활용 1·2편 — `study/SpringBootJPA/jpashop`
 
