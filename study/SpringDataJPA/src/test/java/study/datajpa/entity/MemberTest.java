@@ -1,4 +1,4 @@
-package study.data_jpa.entity;
+package study.datajpa.entity;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -19,7 +19,7 @@ class MemberTest {
 
     @Test
     @Transactional
-    @Rollback(false)
+    // @Rollback(false) // DB를 눈으로 확인할 때만 잠깐 켠다. 켜두면 다른 테스트의 개수 검증이 깨진다.
     public void testEntity() {
         Team teamA = new Team("teamA");
         Team teamB = new Team("teamB");

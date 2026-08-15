@@ -1,4 +1,4 @@
-package study.data_jpa.entity;
+package study.datajpa.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -23,7 +23,11 @@ public class Member {
 //    protected Member() {}
 
     public Member(String username){
-        this.username = username;
+        this(username, 0);
+    }
+
+    public Member(String username, int age){
+        this(username, age, null);
     }
 
     public Member(String username, int age, Team team) {
