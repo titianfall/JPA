@@ -35,6 +35,4 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
-	// MemberController(@Profile("!test"))의 @PostConstruct 샘플 100건이 테스트에 섞이지 않게 한다
-	systemProperty 'spring.profiles.active', 'test'
 }

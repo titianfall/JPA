@@ -24,7 +24,7 @@ spring:
       pageable:
         default-page-size: 10
         max-page-size: 200
-        one-indexed-parameters: true # 1부터 index 시작
+#        one-indexed-parameters: true # 1부터 index 시작
 
 logging.level:
   org.hibernate.SQL: debug
