@@ -25,6 +25,9 @@
 
 실습 코드: [`study/SpringBootJPA/jpashop`](study/SpringBootJPA/jpashop) (활용 1편에서 이어서 개발)
 
+<details>
+<summary><b>챕터별 정리</b> (1~5장 완료, 6장 스킵)</summary>
+
 | # | 챕터 | 정리 |
 |---|------|------|
 | 1 | API 개발 기본 | [1. API 개발 기본.md](study/docs/SpringBootJPA/활용2/1.%20API%20개발%20기본.md) |
@@ -33,6 +36,8 @@
 | 4 | API 개발 고급 - 컬렉션 조회 최적화 | [4. API 개발 고급 - 컬렉션 조회 최적화.md](study/docs/SpringBootJPA/활용2/4.%20API%20개발%20고급%20-%20컬렉션%20조회%20최적화.md) |
 | 5 | API 개발 고급 - 실무 필수 최적화 | [5. API 개발 고급 - 실무 필수 최적화.md](study/docs/SpringBootJPA/활용2/5.%20API%20개발%20고급%20-%20실무%20필수%20최적화.md) |
 | 6 | 다음으로 | ⏭️ 스킵 (강의 마무리 안내) |
+
+</details>
 
 ### 실전! 스프링 부트와 JPA 활용 1편 (완료)
 
