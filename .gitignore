@@ -38,3 +38,7 @@ bin/
 # 로그 및 기타
 *.log
 .DS_Store
+
+# Postman IDE 플러그인 생성 파일
+/study/SpringDataJPA/.postman/
+/study/SpringDataJPA/postman/
