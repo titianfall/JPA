@@ -23,6 +23,7 @@
 
 ### 실전! 스프링 부트와 JPA 활용 2편 (완료)
 
+📌 **[JPA 활용 2편 핵심 정리](study/docs/SpringBootJPA/활용2/JPA%20활용%202편%20핵심%20정리.md)** — 전 챕터 통합 요약
 실습 코드: [`study/SpringBootJPA/jpashop`](study/SpringBootJPA/jpashop) (활용 1편에서 이어서 개발)
 
 <details>
