@@ -19,6 +19,13 @@ spring:
         # show_sql: true # System.out 에 찍히므로 아래 logging.level 방식을 쓴다
         format_sql: true
 
+  data:
+    web:
+      pageable:
+        default-page-size: 10
+        max-page-size: 200
+        one-indexed-parameters: true # 1부터 index 시작
+
 logging.level:
   org.hibernate.SQL: debug
   # 쿼리 파라미터 로그 (하이버네이트 6 이상. 강의의 org.hibernate.type: trace 는 동작하지 않는다)

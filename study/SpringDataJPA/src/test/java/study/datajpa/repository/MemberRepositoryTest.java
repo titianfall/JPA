@@ -36,6 +36,8 @@ class MemberRepositoryTest {
     @PersistenceContext
     private EntityManager em;
 
+//    @Autowired MemberQueryRepository memberQueryRepository;
+
     @Test
     public void testMember() {
         
@@ -311,5 +313,30 @@ class MemberRepositoryTest {
 
         List<Member> result = memberRepository.findLockByUsername("member1"); // select ... for update
         assertThat(result.size()).isEqualTo(1);
+    }
+
+    @Test
+    public void callCustom() {
+        List<Member> members = memberRepository.findMemberCustom();
+    }
+
+    @Test
+    public void jpaEventBaseEntity() throws Exception {
+        Member member = new Member("member1");
+        memberRepository.save(member);
+
+        Thread.sleep(100);
+        member.setUsername("member2");
+
+        em.flush();
+        em.clear();
+
+        Member findMember = memberRepository.findById(member.getId()).get();
+
+        System.out.println("findMember.createdDate = " + findMember.getCreatedDate());
+//        System.out.println("findMember.updateDate = " + findMember.getUpdatedDate());
+        System.out.println("findMember.lastModifiedDate = " + findMember.getLastModifiedDate());
+        System.out.println("findMember.createdBy = " + findMember.getCreatedBy());
+        System.out.println("findMember.lastModifiedBy = " + findMember.getLastModifiedBy());
     }
 }
