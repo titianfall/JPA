@@ -3,11 +3,11 @@
 - **1단계**: 자바 ORM 표준 JPA 프로그래밍 - 기본편 ✅ 완료
 - **2단계**: 실전! 스프링 부트와 JPA 활용 1편 ✅ 완료
 - **3단계**: 실전! 스프링 부트와 JPA 활용 2편 — API 개발과 성능 최적화 ✅ 완료
-- **4단계**: 실전! 스프링 데이터 JPA 🚀 진행 중
+- **4단계**: 실전! 스프링 데이터 JPA ✅ 완료
 
 ## 학습 정리 진행 상황
 
-### 실전! 스프링 데이터 JPA (진행 중)
+### 실전! 스프링 데이터 JPA (완료)
 
 실습 코드: [`study/SpringDataJPA`](study/SpringDataJPA)
 
@@ -19,7 +19,7 @@
 | 4 | 쿼리 메소드 기능 | [4. 쿼리 메소드 기능.md](study/SpringDataJPA/docs/4.%20쿼리%20메소드%20기능.md) |
 | 5 | 확장 기능 | [5. 확장 기능.md](study/SpringDataJPA/docs/5.%20확장%20기능.md) |
 | 6 | 스프링 데이터 JPA 분석 | [6. 스프링 데이터 JPA 분석.md](study/SpringDataJPA/docs/6.%20스프링%20데이터%20JPA%20분석.md) |
-| 7 | 나머지 기능들 | [7. 나머지 기능들.md](study/SpringDataJPA/docs/7.%20나머지%20기능들.md) 🚧 코드 미구현 |
+| 7 | 나머지 기능들 | [7. 나머지 기능들.md](study/SpringDataJPA/docs/7.%20나머지%20기능들.md) |
 
 ### 실전! 스프링 부트와 JPA 활용 2편 (완료)
 
