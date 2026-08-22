@@ -18,7 +18,7 @@
 | 3 | 공통 인터페이스 기능 | [3. 공통 인터페이스 기능.md](study/SpringDataJPA/docs/3.%20공통%20인터페이스%20기능.md) |
 | 4 | 쿼리 메소드 기능 | [4. 쿼리 메소드 기능.md](study/SpringDataJPA/docs/4.%20쿼리%20메소드%20기능.md) |
 | 5 | 확장 기능 | [5. 확장 기능.md](study/SpringDataJPA/docs/5.%20확장%20기능.md) |
-| 6 | 스프링 데이터 JPA 분석 | — |
+| 6 | 스프링 데이터 JPA 분석 | [6. 스프링 데이터 JPA 분석.md](study/SpringDataJPA/docs/6.%20스프링%20데이터%20JPA%20분석.md) |
 | 7 | 나머지 기능들 | — |
 
 ### 실전! 스프링 부트와 JPA 활용 2편 (완료)
